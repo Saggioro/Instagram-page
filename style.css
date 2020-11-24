@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+a {
+    color: #0095f6;
+}
+.phone-background {
+    height: 600px;
+    width: 400px;
+    background-image: url('./assets/celular.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+    position: relative;
+}
+
+.phone-background img {
+    position: absolute;
+    top: 91px;
+    left: 124px;
+
+    transition: opacity 3s;
+}
+.phone-background img+img {
+    opacity: 0;
+}
+
+.texts-container {
+    height: 100%;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.continue, .not-you {
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    
+}
+.continue {
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.instagram-logo {
+    height: 25%;
+}
+
+.instagram-logo img {
+    height: 100%;
+}
+
+.photo {
+    height: 35%;
+}
+
+.photo img {
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.continue-as {
+    margin-top: 20px;
+    height: max-content;
+    width: max-content;
+    padding: 5px 25px;
+    background-color: #0095f6;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.remove-account {
+    margin-top: 20px;
+    color: #0095f6;
+}
+
+.not-you {
+    height: 80px;
+    margin-top: 10px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download {
+    margin-top: 10px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download p {
+    font-weight: 700;
+}
+
+.download div {
+    margin-top: 15px;
+    display: flex;
+
+}
+
+.download-img {
+    width: 170px;
+}
+
+@media (max-width:1000px){
+    .phone-background {
+        display: none;
+    }
+
+    .texts-container {
+        width: 100%;
+        align-items: center;
+    }
+}
